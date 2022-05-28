@@ -1,0 +1,39 @@
+#Eliminar Carpeta ContenidoSecreto
+**/carpeta-ContenidoSecreto
+
+
+#Eliminar archivo config.php (pendiente la plantilla)
+dynamics/php/*config.php
+
+!*-plantilla.php
+
+#Eliminar pdfs de assets menos los que están en la carpeta de docs
+assets/media/files/*.pdf
+
+#Archivos txt pues no poseen info importante 
+*.txt
+
+#Todas las imagenes excepto las escenciales para el sistema
+*.jpg
+*.gif
+*.png
+*.jpeg
+*.webp
+
+!*-system.jpg
+!*-system.gif
+!*-system.png
+!*-system.jpeg
+!*-system.webp
+
+#Todos los archivos -prueba -local
+*prueba*.js
+*local*.js
+
+*prueba*.php
+*local*.php
+
+*local*.html
+
+#Menos los que terminen con -experimento
+!*-experimento.js
